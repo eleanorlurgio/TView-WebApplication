@@ -14,6 +14,22 @@
  *= require_self
  */
 
-// Imports at the end of file
-@import "bootstrap-sprockets";
-@import "bootstrap";
+ // Imports at the end of file
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ $font: Arial, sans-serif;
+ $white: #FFFFFF;
+ $dark-grey: #666666;
+
+ body {
+   font-family: $font;
+   color: $white;
+   background-color: $dark-grey;
+   margin: 10px;
+   padding: 10px;
+ }
+
+a {
+  color: $white;
+}

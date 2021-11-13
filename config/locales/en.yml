@@ -32,3 +32,8 @@
 en:
   app_title: TView
   app_description: A web application for browsing different TV shows, organising your favourites and applying to be on the shows.
+
+  home:
+    home:
+      title: TView
+      welcome: Welcome to TView, your hub for managing your TV viewing.
