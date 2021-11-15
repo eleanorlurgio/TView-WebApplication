@@ -8,24 +8,26 @@
       %span.icon-bar
       %span.icon-bar
       %span.icon-bar
-    %a.navbar-brand{href: "#"} TView
+    %a.navbar-brand{href: "/home"} TView
   / Collect the nav links, forms, and other content for toggling
   #bs-example-navbar-collapse-1.collapse.navbar-collapse
     %ul.nav.navbar-nav
       %li
-        %a{href: "#"} Home
+        %a{href: "/home"} Home
       %li
-        %a{href: "#"} Shows
-      %li.dropdown
-        %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
-          My Lists
-          %b.caret
-        %ul.dropdown-menu
-          %li
-            %a{href: "#"} Watch Later
-          %li
-            %a{href: "#"} Favourites
+        %a{href: "/shows"} Shows
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown"}
+            My Lists
+            %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href => "/watchlater"} Watch Later
+            %li
+              %a{:href => "/favourites"} Favourites
+        %li
+          %a{href: "/contact"} Contact
     %ul.nav.navbar-nav.navbar-right
       %li
-        %a{href: "#"} Link
+        %a{href: "/login"} Log In
   / /.navbar-collapse

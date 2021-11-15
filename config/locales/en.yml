@@ -37,3 +37,23 @@ en:
     home:
       title: TView
       welcome: Welcome to TView, your hub for managing your TV viewing.
+
+    shows:
+      title: Shows Information
+      welcome: Welcome to shows.
+
+    watchlater:
+      title: Watch Later List
+      welcome: Welcome to your watch list.
+
+    favourites:
+      title: Favourites List
+      welcome: Welcome to your favourites list.
+
+    contact:
+      title: Contact Page
+      welcome: Welcome to points of view
+
+    login:
+      title: Log In
+      welcome: Log in page
