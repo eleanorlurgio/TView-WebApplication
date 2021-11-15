@@ -24,6 +24,7 @@
  $theme-light: #718792;
  $theme-medium: #455a64;
  $theme-dark: #1c313a;
+ $theme-pink: #ffd4d4;
 
  body {
    font-family: $font;
@@ -47,7 +48,7 @@ a {
 }
 .navbar.navbar-default .navbar-brand:hover,
 .navbar.navbar-default .navbar-brand:focus {
-  color: #ffd4d4;
+  color: $theme-pink;
 }
 .navbar.navbar-default .navbar-text {
   color: $white;
@@ -57,18 +58,18 @@ a {
 }
 .navbar.navbar-default .navbar-nav > li > a:hover,
 .navbar.navbar-default .navbar-nav > li > a:focus {
-  color: #ffd4d4;
+  color: $theme-pink;
 }
 .navbar.navbar-default .navbar-nav > .active > a,
 .navbar.navbar-default .navbar-nav > .active > a:hover,
 .navbar.navbar-default .navbar-nav > .active > a:focus {
-  color: #ffd4d4;
+  color: $theme-pink;
   background-color: $white;
 }
 .navbar.navbar-default .navbar-nav > .open > a,
 .navbar.navbar-default .navbar-nav > .open > a:hover,
 .navbar.navbar-default .navbar-nav > .open > a:focus {
-  color: #ffd4d4;
+  color: $theme-pink;
   background-color: $white;
 }
 .navbar.navbar-default .navbar-toggle {
@@ -86,8 +87,8 @@ a {
   border:none;
 }
 .navbar.navbar-default .navbar-link {
-  color: #292929;
+  color: $theme-medium;
 }
 .navbar.navbar-default .navbar-link:hover {
-  color: #ffd4d4;
+  color: $theme-pink;
 }
