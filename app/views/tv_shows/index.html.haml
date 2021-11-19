@@ -1,0 +1,35 @@
+%h1 Listing tv_shows
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Channel
+      %th Genre
+      %th Run time
+      %th Next air
+      %th No seasons
+      %th No episodes
+      %th Formats
+      %th
+      %th
+      %th
+
+  %tbody
+    - @tv_shows.each do |tv_show|
+      %tr
+        %td= tv_show.name
+        %td= tv_show.channel
+        %td= tv_show.genre
+        %td= tv_show.run_time
+        %td= tv_show.next_air
+        %td= tv_show.no_seasons
+        %td= tv_show.no_episodes
+        %td= tv_show.formats
+        %td= link_to 'Show', tv_show
+        %td= link_to 'Edit', edit_tv_show_path(tv_show)
+        %td= link_to 'Destroy', tv_show, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Tv show', new_tv_show_path

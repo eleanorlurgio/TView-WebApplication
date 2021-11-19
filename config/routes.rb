@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :applications
+  resources :users
+  resources :tv_shows
   # Route for default homepage
   root 'home#home'
 

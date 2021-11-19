@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  channel: MyString
+  genre: MyString
+  run_time: 1
+  next_air: 2021-11-19
+  no_seasons: 1
+  no_episodes: 1
+  formats: MyString
+
+two:
+  name: MyString
+  channel: MyString
+  genre: MyString
+  run_time: 1
+  next_air: 2021-11-19
+  no_seasons: 1
+  no_episodes: 1
+  formats: MyString

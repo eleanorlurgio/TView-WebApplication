@@ -1,0 +1,31 @@
+%h1 Listing applications
+
+%table
+  %thead
+    %tr
+      %th Tv show
+      %th No slots
+      %th Deadline
+      %th Filming start
+      %th Filming end
+      %th Filming location
+      %th
+      %th
+      %th
+
+  %tbody
+    - @applications.each do |application|
+      %tr
+        %td= application.tv_show
+        %td= application.no_slots
+        %td= application.deadline
+        %td= application.filming_start
+        %td= application.filming_end
+        %td= application.filming_location
+        %td= link_to 'Show', application
+        %td= link_to 'Edit', edit_application_path(application)
+        %td= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Application', new_application_path

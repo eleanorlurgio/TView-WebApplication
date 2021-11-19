@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @tv_show.name
+%p
+  %b Channel:
+  = @tv_show.channel
+%p
+  %b Genre:
+  = @tv_show.genre
+%p
+  %b Run time:
+  = @tv_show.run_time
+%p
+  %b Next air:
+  = @tv_show.next_air
+%p
+  %b No seasons:
+  = @tv_show.no_seasons
+%p
+  %b No episodes:
+  = @tv_show.no_episodes
+%p
+  %b Formats:
+  = @tv_show.formats
+
+= link_to 'Edit', edit_tv_show_path(@tv_show)
+\|
+= link_to 'Back', tv_shows_path

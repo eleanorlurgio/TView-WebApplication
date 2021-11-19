@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Tv show:
+  = @application.tv_show
+%p
+  %b No slots:
+  = @application.no_slots
+%p
+  %b Deadline:
+  = @application.deadline
+%p
+  %b Filming start:
+  = @application.filming_start
+%p
+  %b Filming end:
+  = @application.filming_end
+%p
+  %b Filming location:
+  = @application.filming_location
+
+= link_to 'Edit', edit_application_path(@application)
+\|
+= link_to 'Back', applications_path
