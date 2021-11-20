@@ -64,6 +64,6 @@ class TvShowsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def tv_show_params
-      params.require(:tv_show).permit(:name, :channel, :genre, :run_time, :next_air, :no_seasons, :no_episodes, :formats)
+      params.require(:tv_show).permit(:name, :channel, :genre, :run_time, :next_air, :no_seasons, :no_episodes, :formats, :image)
     end
 end

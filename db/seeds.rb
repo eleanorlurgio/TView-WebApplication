@@ -6,7 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-TvShow.create(name: "Match of the Day", channel: "BBC1",genre: "Sport", run_time: 90, next_air: 2021-11-20, no_seasons: 51, no_episodes: 5000, formats: "Colour | HD | SUB | WIDE")
+#Active.create(title: "MatchOfTheDay", album_id: 1).image.attach(io: File.open('app/assets/images/MatchOfTheDay.jpg'), filename: 'MatchOfTheDay.jpg')
+TvShow.create(name: "Match of the Day", channel: "BBC1",genre: "Sport", run_time: 90, next_air: 2021-11-20, no_seasons: 51, no_episodes: 5000, formats: "Colour | HD | SUB | WIDE", image: 1).image.attach(io: File.open('app/assets/images/MatchOfTheDay.jpg'), filename: 'MatchOfTheDay.jpg')
 TvShow.create(name: "Strictly Come Dancing", channel: "BBC1", genre: "Entertainment", run_time: 80, next_air: 2021-11-20, no_seasons: 18, no_episodes: 349, formats: "Colour | HD | SUB | WIDE | AD | SIGN")
 TvShow.create(name: "The Hit List", channel: "BBC1", genre: "Music", run_time: 30, next_air: 2021-11-27, no_seasons: 4, no_episodes: 24, formats: "Colour")
 TvShow.create(name: "Pointless", channel: "BBC1",genre: "Game Show", run_time: 45, next_air: 2021-11-19, no_seasons: 24, no_episodes: 1326, formats: "Colour | HD | SUB | WIDE")
