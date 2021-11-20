@@ -1,27 +1,13 @@
 %h1 Browse TV Shows
 
-%table
-  %thead
+%tbody
+  - @tv_shows.each do |tv_show|
     %tr
-      %th Name
-      %th Channel
-      %th Genre
-      %th Run time
-      %th Next air
-      %th No seasons
-      %th No episodes
-      %th Formats
-      %th Image
-
-  %tbody
-    - @tv_shows.each do |tv_show|
-      %tr
-        %td= tv_show.name
-        %td= tv_show.channel
-        %td= tv_show.genre
-        %td
-          - if tv_show.image.attached?
-            %p
-              = image_tag tv_show.image
-        %td= link_to 'Show', tv_show
-        %td= link_to 'Destroy', tv_show, method: :delete, data: { confirm: 'Are you sure?' }
+      %td
+        - if tv_show.image.attached?
+          %div.polaroid
+            = image_tag tv_show.image
+            %div.container
+              = tv_show.name
+      %td= link_to 'Show', tv_show
+      %td= link_to 'Destroy', tv_show, method: :delete, data: { confirm: 'Are you sure?' }
