@@ -8,6 +8,5 @@
           %div.polaroid
             = image_tag tv_show.image
             %div.container
-              = tv_show.name
-      %td= link_to 'Show', tv_show
+              = link_to tv_show.name, tv_show
       %td= link_to 'Destroy', tv_show, method: :delete, data: { confirm: 'Are you sure?' }
