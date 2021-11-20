@@ -24,13 +24,13 @@ ActiveRecord::Schema.define(version: 2021_11_19_022626) do
   end
 
   create_table "tv_shows", force: :cascade do |t|
-    t.string "name", UNIQUE
+    t.string "name", unique: true
     t.string "channel"
     t.string "genre"
     t.integer "run_time"
     t.date "next_air"
-    t.integer "no_seasons"
-    t.integer "no_episodes"
+    t.integer "no_seasons", check(no_seasons > 1)
+    t.integer "no_episodes", check(no_episodes > 1)
     t.string "formats"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
