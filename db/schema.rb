@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_19_022626) do
+ActiveRecord::Schema.define(version: 2021_11_20_164612) do
 
   create_table "applications", force: :cascade do |t|
     t.string "tv_show"
@@ -24,16 +24,17 @@ ActiveRecord::Schema.define(version: 2021_11_19_022626) do
   end
 
   create_table "tv_shows", force: :cascade do |t|
-    t.string "name", unique: true
+    t.string "name"
     t.string "channel"
     t.string "genre"
     t.integer "run_time"
     t.date "next_air"
-    t.integer "no_seasons", check(no_seasons > 1)
-    t.integer "no_episodes", check(no_episodes > 1)
+    t.integer "no_seasons"
+    t.integer "no_episodes"
     t.string "formats"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.binary "image"
   end
 
   create_table "users", force: :cascade do |t|
