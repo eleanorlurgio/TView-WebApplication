@@ -19,19 +19,9 @@
         %td= tv_show.name
         %td= tv_show.channel
         %td= tv_show.genre
-        %td= tv_show.run_time
-        %td= tv_show.next_air
-        %td= tv_show.no_seasons
-        %td= tv_show.no_episodes
-        %td= tv_show.formats
         %td
           - if tv_show.image.attached?
             %p
               = image_tag tv_show.image
         %td= link_to 'Show', tv_show
-        %td= link_to 'Edit', edit_tv_show_path(tv_show)
         %td= link_to 'Destroy', tv_show, method: :delete, data: { confirm: 'Are you sure?' }
-
-%br
-
-= link_to 'New Tv show', new_tv_show_path
