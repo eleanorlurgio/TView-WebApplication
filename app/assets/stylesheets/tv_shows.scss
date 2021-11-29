@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// Theme colours
+$theme-light: #718792;
+$theme-medium: #455a64;
+$theme-dark: #1c313a;
+$theme-pink: #ffcccb;
+
 // Cards
 div.polaroid {
   width: 30%;
@@ -26,4 +32,29 @@ div.container {
 a {
   color: black;
   text-decoration: none;
+}
+
+// Info box
+
+/* box with image
+div.box {
+  background-color: $theme-pink;
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
+  border-image: url(.img);
+
+  .img {
+    width: 100%;
+    max-height: auto;
+  }
+
+}
+*/
+
+div.box {
+  background-color: $theme-pink;
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
 }
