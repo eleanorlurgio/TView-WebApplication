@@ -20,6 +20,9 @@ Rails.application.routes.draw do
   # Route for mapping contact page to 'Contact' tab
   get 'contact', to: 'home#contact'
 
+  # Route for sending contact post request
+  post 'request_contact', to: 'home#request_contact'
+
   # Route for mapping login page to 'Log In' tab
   get 'login', to: 'home#login'
 
