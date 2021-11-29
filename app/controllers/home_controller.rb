@@ -30,4 +30,7 @@ class HomeController < ApplicationController
 
   def login
   end
+
+  def im_a_celebrity_news
+  end
 end

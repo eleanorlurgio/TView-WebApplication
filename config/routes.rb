@@ -26,4 +26,7 @@ Rails.application.routes.draw do
   # Route for mapping login page to 'Log In' tab
   get 'login', to: 'home#login'
 
+  # Routes for mapping news articles
+  get 'im_a_celebrity_news', to: 'home#im_a_celebrity_news'
+
 end
