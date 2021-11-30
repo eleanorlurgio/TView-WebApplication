@@ -1,0 +1,13 @@
+= form_for @watchlist do |f|
+  - if @watchlist.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@watchlist.errors.count, "error")} prohibited this watchlist from being saved:"
+      %ul
+        - @watchlist.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :user
+    = f.text_field :user
+  .actions
+    = f.submit 'Save'

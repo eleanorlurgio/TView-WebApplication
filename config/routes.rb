@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :favouritelists
+  resources :watchlists
   resources :applications
   resources :users
   resources :tv_shows

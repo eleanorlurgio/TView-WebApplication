@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @favouritelist.user
+
+= link_to 'Edit', edit_favouritelist_path(@favouritelist)
+\|
+= link_to 'Back', favouritelists_path
