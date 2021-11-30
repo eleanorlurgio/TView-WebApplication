@@ -33,4 +33,10 @@ class HomeController < ApplicationController
 
   def im_a_celebrity_news
   end
+
+  def strictly_news
+  end
+
+  def dancing_on_ice_news
+  end
 end
