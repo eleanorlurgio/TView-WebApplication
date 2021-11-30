@@ -17,7 +17,6 @@
 //= require turbolinks
 //= require_tree .
 
-
 var slideIndex = 0;
 
 function showSlides() {
