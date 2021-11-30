@@ -31,6 +31,6 @@ Rails.application.routes.draw do
   # Routes for mapping news articles
   get 'im_a_celebrity_news', to: 'home#im_a_celebrity_news'
   get 'strictly_news', to: 'home#strictly_news'
-  get 'dancing_on_ice_news', to: 'home#im_a_celebrity_news'
+  get 'dancing_on_ice', to: 'home#dancing_on_ice'
 
 end
