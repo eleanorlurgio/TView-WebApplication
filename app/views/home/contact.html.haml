@@ -1,13 +1,16 @@
-%h1= t('.title')
-%p= t('.welcome')
+.contactbox
+  %h1= t('.title')
+  %hr
+  %p= t('.welcome')
+  %hr
 
-= form_tag request_contact_path, method: 'post' do
-  = label_tag :name, t('.name')
-  = text_field_tag :name, '', title: t('.enter_name'), size: 50, :required => true
-  = label_tag :email, t('.email')
-  = email_field_tag :email, '', title: t('.enter_email'), :required => true
-  = label_tag :telephone, t('.telephone')
-  = telephone_field_tag :telephone, '', title: t('.enter_telephone'), :required => true
-  = label_tag :message, t('.message')
-  = text_field_tag :message, '', title: t('.enter_message'), size: 100, :required => true
-  = submit_tag t('.submit')
+  = form_tag request_contact_path, method: 'post' do
+    = label_tag :name, t('.name')
+    = text_field_tag :name, '', title: t('.enter_name'), size: 25, :required => true
+    = label_tag :email, t('.email')
+    = email_field_tag :email, '', title: t('.enter_email'), size: 35, :required => true
+    = label_tag :telephone, t('.telephone')
+    = telephone_field_tag :telephone, '', title: t('.enter_telephone'), size: 35, maxlength: 11, :required => true
+    = label_tag :message, t('.message')
+    = text_field_tag :message, '', title: t('.enter_message'), size: 120, :required => true
+    = submit_tag t('.submit')

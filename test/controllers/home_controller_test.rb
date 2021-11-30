@@ -47,8 +47,8 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
 
     assert_select 'title', 'TView'
-    assert_select 'h1', 'Contact Page'
-    assert_select 'p', 'Welcome to points of view'
+    assert_select 'h1', 'Contact Us'
+    assert_select 'p', 'Welcome to Points of View! Whether you’ve loved or loathed something you’ve seen on the TV, we want to hear about it. Please share with us your opinions and they may be featured on BBC\'s special program, Points of View.'
   end
 
   test "should post request contact but no email" do

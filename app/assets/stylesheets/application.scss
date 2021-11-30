@@ -22,30 +22,32 @@
  $white: #FFFFFF;
 
 // Theme colours
-/*
- $theme-light: #718792;
- $theme-medium: #455a64;
- $theme-dark: #1c313a;
- $theme-pink: #ffcccb;
-*/
 $theme-light: #6d6d6d;
 $theme-medium: #424242;
 $theme-dark: #1b1b1b;
 $theme-green: #cddc39;
 
+// Navigation bar text
+//$nav-font: Georgia, serif;
+$nav-font: Verdana;
+$nav-size: 25px;
+
  body {
    font-family: $font;
    color: $white;
-   background-color: $theme-medium;
-   background-size: 100%;
+   //background-color: $theme-medium;
+   background-image: image_url("Background.gif");
+   background-repeat: no-repeat;
+   background-size: cover;
    margin: 10px;
    padding: 10px;
-
  }
 
 a:link {
   color: black;
   text-decoration: none;
+  font-family: $nav-font;
+  font-size: $nav-size;
 }
 
 a:hover {
@@ -61,11 +63,13 @@ a:visited {
 // Navigation bar
 .navbar.navbar-default {
   background-color: $theme-dark;
-  border-color: $theme-dark;
-  padding: 10px 0;
+  border-color: $theme-green;
+  border-width: medium;
+  padding: 20px 10px;
 }
+
 .navbar.navbar-default .navbar-brand {
-  color: $white;
+  color: $theme-green;
 }
 .navbar.navbar-default .navbar-brand:hover,
 .navbar.navbar-default .navbar-brand:focus {
@@ -119,6 +123,8 @@ a:visited {
 li {
  display: block;
  transition-duration: 0.5s;
+ font-family: $nav-font;
+ font-size: $nav-size;
 }
 
 li:hover {
@@ -154,6 +160,16 @@ ul li ul li {
   background-color: #ded7c1;
   padding: 50px;
   width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Contact page box
+.contactbox {
+  background-color: $theme-dark;
+  box-shadow: 8px 8px 8px white;
+  width: 50%;
+  padding: 50px;
   margin-left: auto;
   margin-right: auto;
 }
