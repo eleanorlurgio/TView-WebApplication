@@ -22,15 +22,22 @@
  $white: #FFFFFF;
 
 // Theme colours
+/*
  $theme-light: #718792;
  $theme-medium: #455a64;
  $theme-dark: #1c313a;
  $theme-pink: #ffcccb;
+*/
+$theme-light: #6d6d6d;
+$theme-medium: #424242;
+$theme-dark: #1b1b1b;
+$theme-green: #cddc39;
 
  body {
    font-family: $font;
    color: $white;
    background-color: $theme-medium;
+   background-size: 100%;
    margin: 10px;
    padding: 10px;
 
@@ -62,7 +69,7 @@ a:visited {
 }
 .navbar.navbar-default .navbar-brand:hover,
 .navbar.navbar-default .navbar-brand:focus {
-  color: $theme-pink;
+  color: $theme-green;
 }
 .navbar.navbar-default .navbar-text {
   color: $white;
@@ -72,18 +79,18 @@ a:visited {
 }
 .navbar.navbar-default .navbar-nav > li > a:hover,
 .navbar.navbar-default .navbar-nav > li > a:focus {
-  color: $theme-pink;
+  color: $theme-green;
 }
 .navbar.navbar-default .navbar-nav > .active > a,
 .navbar.navbar-default .navbar-nav > .active > a:hover,
 .navbar.navbar-default .navbar-nav > .active > a:focus {
-  color: $theme-pink;
+  color: $theme-green;
   background-color: $white;
 }
 .navbar.navbar-default .navbar-nav > .open > a,
 .navbar.navbar-default .navbar-nav > .open > a:hover,
 .navbar.navbar-default .navbar-nav > .open > a:focus {
-  color: $theme-pink;
+  color: $theme-green;
   background-color: $white;
 }
 .navbar.navbar-default .navbar-toggle {
@@ -104,5 +111,5 @@ a:visited {
   color: $theme-medium;
 }
 .navbar.navbar-default .navbar-link:hover {
-  color: $theme-pink;
+  color: $theme-green;
 }
