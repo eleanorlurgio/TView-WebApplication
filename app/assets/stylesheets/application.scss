@@ -36,7 +36,7 @@ $nav-size: 25px;
    font-family: $font;
    color: $white;
    //background-color: $theme-medium;
-   background-image: image_url("Background.gif");
+   background-image: image_url("Background.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    margin: 10px;
@@ -118,6 +118,17 @@ a:visited {
   color: $theme-green;
 }
 
+// Footer
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: $theme-dark;
+   opacity: 0.5;
+   color: white;
+   text-align: center;
+}
 
 // Dropdown links
 li {
