@@ -31,5 +31,5 @@
   \|
   = link_to 'Back', tv_shows_path
 
-= button_to 'Add to Watch Later', new_watchlist_path
-= button_to 'Add to Favourites', new_favouritelist_path
+= button_to 'Add to Watch Later', @watchlist.update(@tv_show.name)
+= button_to 'Add to Favourites', @favouritelist.update(@tv_show.name)
