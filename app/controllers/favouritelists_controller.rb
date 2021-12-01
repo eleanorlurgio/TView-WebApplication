@@ -1,5 +1,6 @@
 class FavouritelistsController < ApplicationController
   before_action :set_favouritelist, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /favouritelists or /favouritelists.json
   def index

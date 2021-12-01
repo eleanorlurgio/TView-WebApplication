@@ -19,7 +19,6 @@
  @import "bootstrap";
 
  $font: Arial, sans-serif;
- $white: #FFFFFF;
 
 // Theme colours
 $theme-light: #6d6d6d;
@@ -34,7 +33,7 @@ $nav-size: 25px;
 
  body {
    font-family: $font;
-   color: $white;
+   color: white;
    //background-color: $theme-medium;
    background-image: image_url("Background.jpg");
    background-repeat: no-repeat;
@@ -76,10 +75,10 @@ a:visited {
   color: $theme-green;
 }
 .navbar.navbar-default .navbar-text {
-  color: $white;
+  color: white;
 }
 .navbar.navbar-default .navbar-nav > li > a {
-  color: $white;
+  color: white;
 }
 .navbar.navbar-default .navbar-nav > li > a:hover,
 .navbar.navbar-default .navbar-nav > li > a:focus {
@@ -89,23 +88,23 @@ a:visited {
 .navbar.navbar-default .navbar-nav > .active > a:hover,
 .navbar.navbar-default .navbar-nav > .active > a:focus {
   color: $theme-green;
-  background-color: $white;
+  background-color: white;
 }
 .navbar.navbar-default .navbar-nav > .open > a,
 .navbar.navbar-default .navbar-nav > .open > a:hover,
 .navbar.navbar-default .navbar-nav > .open > a:focus {
   color: $theme-green;
-  background-color: $white;
+  background-color: white;
 }
 .navbar.navbar-default .navbar-toggle {
-  border-color: $white;
+  border-color: white;
 }
 .navbar.navbar-default .navbar-toggle:hover,
 .navbar.navbar-default .navbar-toggle:focus {
-  background-color: $white;
+  background-color: white;
 }
 .navbar.navbar-default .navbar-toggle .icon-bar {
-  background-color: $white;
+  background-color: white;
 }
 .navbar.navbar-default .navbar-collapse,
 .navbar.navbar-default .navbar-form {
