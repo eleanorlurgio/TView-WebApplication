@@ -1,22 +1,17 @@
 %h1 My Favourites
 
-%table
-  %thead
-    %tr
-      %th User
-      %th
-      %th
-      %th
+favouritelist = @favouritelist.all
 
-  %tbody
-    - @favouritelists.each do |favouritelist|
+%tbody
+  - @tv_shows.each do |tv_show|
+    - if favouritelist.find(tv_show) do
       %tr
-        %td= favouritelist.user
-        %td= link_to 'Show', favouritelist
-        %td= link_to 'Edit', edit_favouritelist_path(favouritelist)
-        %td= link_to 'Destroy', favouritelist, method: :delete, data: { confirm: 'Are you sure?' }
-
-%br
+        %td
+          - if tv_show.image.attached?
+            %div.polaroid
+              = image_tag tv_show.image
+              %div.container
+                = link_to tv_show.name, tv_show
 
 
 //= link_to 'New Favouritelist', new_favouritelist_path
