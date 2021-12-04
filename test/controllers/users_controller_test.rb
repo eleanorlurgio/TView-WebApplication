@@ -45,4 +45,12 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to users_url
   end
+
+  describe User do
+    it { should have_many :watchlists }
+  end
+
+  describe User do
+    it { should have_many :favouritelists }
+  end
 end

@@ -1,4 +1,4 @@
 class Favouritelist < ApplicationRecord
-  belongs_to :user
-  has_many :tv_shows
+  belongs_to :users
+  belongs_to :tv_shows
 end

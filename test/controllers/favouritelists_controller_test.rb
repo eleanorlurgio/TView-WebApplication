@@ -45,4 +45,8 @@ class FavouritelistsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to favouritelists_url
   end
+
+  describe Favouritelist do
+    it { should }
+  end
 end
