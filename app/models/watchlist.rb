@@ -1,3 +1,5 @@
 class Watchlist < ApplicationRecord
-  has_many :users
+  belongs_to :users
+  belongs_to :tv_shows
+  scope :user_watchlist, ->(user) {where(['user_id = ?', user.id])}
 end

@@ -45,4 +45,5 @@ class WatchlistsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to watchlists_url
   end
+
 end
