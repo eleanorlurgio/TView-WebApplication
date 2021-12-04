@@ -4,8 +4,8 @@
 @favouritelists = favouritelist.all
 
 %tbody
-  - @tv_shows.each do |tv_show|
-    - if @favouritelist.find(tv_show)
+  - @favouritelists.each do |favouritelist|
+    - if favouritelist.find(tv_show)
       %tr
         %td
           - if tv_show.image.attached?

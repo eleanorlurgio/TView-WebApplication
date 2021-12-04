@@ -26,6 +26,8 @@ Rails.application.routes.draw do
   # Route for sending contact post request
   post 'request_contact', to: 'home#request_contact'
 
+  #post 'request_watchlist', to: 'home#request_watchlist'
+
   # Route for mapping login page to 'Log In' tab
   get 'login', to: 'home#login'
 
