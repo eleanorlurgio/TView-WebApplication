@@ -1,10 +1,11 @@
 %h1 My Favourites
 
-favouritelist = @favouritelist.all
+@tv_shows = tv_show.all
+@favouritelists = favouritelist.all
 
 %tbody
   - @tv_shows.each do |tv_show|
-    - if favouritelist.find(tv_show) do
+    - if @favouritelist.find(tv_show)
       %tr
         %td
           - if tv_show.image.attached?
@@ -12,6 +13,4 @@ favouritelist = @favouritelist.all
               = image_tag tv_show.image
               %div.container
                 = link_to tv_show.name, tv_show
-
-
-//= link_to 'New Favouritelist', new_favouritelist_path
+        %td

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_02_175709) do
+ActiveRecord::Schema.define(version: 2021_12_04_160815) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -36,6 +36,10 @@ ActiveRecord::Schema.define(version: 2021_12_02_175709) do
   create_table "favouritelists", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "tvshow_id"
+    t.index ["tvshow_id"], name: "index_favouritelists_on_tvshow_id"
+    t.index ["user_id"], name: "index_favouritelists_on_user_id"
   end
 
   create_table "tv_shows", force: :cascade do |t|
@@ -65,6 +69,10 @@ ActiveRecord::Schema.define(version: 2021_12_02_175709) do
   create_table "watchlists", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "tvshow_id"
+    t.index ["tvshow_id"], name: "index_watchlists_on_tvshow_id"
+    t.index ["user_id"], name: "index_watchlists_on_user_id"
   end
 
 end
