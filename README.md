@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Ruby version: 2.5.1p57
+Rails version: 5.2.6
+
+Prerequisites:
+ - Run rails db:seed to populate database first
