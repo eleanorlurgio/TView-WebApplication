@@ -33,6 +33,11 @@ if TvShow.count == 0
   TvShow.create(name: "5 News at 5", channel: "Channel 5", genre: "News", run_time: 60, next_air: 2021-11-22, no_seasons: 1, no_episodes: 228, formats: "Colour | HD | SUB", image: 1).image.attach(io: File.open('app/assets/images/5NewsAt5.jpg'), filename: '5NewsAt5.jpg')
 end
 
+welcome = Review.where(title: 'welcome').first
+welcome.delete if welcome
+
+reviews = Review.create([title: 'Welcome', rating: '10', description: 'to the reviews section'])
+
 # SEED User table
 #if User.count == 0
 #  user = User.create! :email => 'user@gmail.com', :password => '123456', :password_confirmation => '123456'

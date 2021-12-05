@@ -17,7 +17,7 @@ class ReviewsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create review" do
     assert_difference('Review.count') do
-      post reviews_url, params: { review: { description: @review.description, rating: @review.rating, title: @review.title } }
+      post reviews_url, params: { review: { description: @review.description, rating: @review.rating, title: @review.title + " create"} }
     end
 
     assert_redirected_to review_url(Review.last)
