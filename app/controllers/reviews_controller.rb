@@ -4,7 +4,7 @@ class ReviewsController < ApplicationController
 
   # GET /reviews or /reviews.json
   def index
-    @reviews = Review.all
+    @reviews = Review.user_reviews(current_user)
   end
 
   # GET /reviews/1 or /reviews/1.json
@@ -23,6 +23,7 @@ class ReviewsController < ApplicationController
   # POST /reviews or /reviews.json
   def create
     @review = Review.new(review_params)
+    @review.user = current_user
 
     respond_to do |format|
       if @review.save

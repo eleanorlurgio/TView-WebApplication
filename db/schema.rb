@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_05_152727) do
+ActiveRecord::Schema.define(version: 2021_12_05_193927) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -39,7 +39,9 @@ ActiveRecord::Schema.define(version: 2021_12_05_152727) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
     t.index ["title"], name: "index_reviews_on_title", unique: true
+    t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "tv_shows", force: :cascade do |t|
