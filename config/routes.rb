@@ -15,19 +15,14 @@ Rails.application.routes.draw do
   # Route for mapping shows page to 'Shows' tab
   get 'shows', to: 'home#shows'
 
-  # Route for mapping watchlater page to 'Watch Later' tab
-  get 'watchlater', to: 'watchlists#index'
-
-  # Route for mapping favourites page to 'Favourites' tab
-  get 'favourites', to: 'favouritelists#index'
+  # Route for mapping reviews page to 'My Reviews' tab
+  get 'reviews', to: 'home#reviews'
 
   # Route for mapping contact page to 'Contact' tab
   get 'contact', to: 'home#contact'
 
   # Route for sending contact post request
   post 'request_contact', to: 'home#request_contact'
-
-  #post 'request_watchlist', to: 'home#request_watchlist'
 
   # Route for mapping login page to 'Log In' tab
   get 'login', to: 'home#login'

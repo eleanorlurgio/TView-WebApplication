@@ -8,7 +8,7 @@
 
 # SEED TvShow table
 if TvShow.count == 0
-  TvShow.create(name: "Match of the Day", channel: "BBC1",genre: "Sport", run_time: 90, next_air: 2021-11-20, no_seasons: 51, no_episodes: 5000, formats: "Colour | HD | SUB | WIDE", image: 1).image.attach(io: File.open('app/assets/images/MatchOfTheDay.jpg'), filename: 'MatchOfTheDay.jpg')
+  TvShow.create(name: "Match of the Day", channel: "BBC1",genre: "Sport", run_time: 90, next_air: 2021-11-20, no_seasons: 51, no_episodes: 5000, formats: "Colour | HD | SUB | WIDE", image: 1).image.attach(io: File.open('app/assets/images/MatchOfTheDay.jpg'), filename: 'MatchOfTheDay.jpg', description: 'Match of the Day (abbreviated to MOTD) is a "football highlights and analysis" programme, typically broadcast on BBC One on Saturday evenings, during the Premier League season. The show\'s current presenter is former England international striker Gary Lineker. It is one of the BBC\'s longest-running shows, having been on air since 22 August 1964. In 2015, Guinness World Records recognised it "as the longest-running football television programme in the world." The show\'s theme tune was voted the most recognised TV theme tune in a 2010 poll conducted by the PRS.')
   TvShow.create(name: "Strictly Come Dancing", channel: "BBC1", genre: "Entertainment", run_time: 80, next_air: 2021-11-20, no_seasons: 18, no_episodes: 349, formats: "Colour | HD | SUB | WIDE | AD | SIGN", image: 1).image.attach(io: File.open('app/assets/images/StrictlyComeDancing.jpg'), filename: 'StrictlyComeDancing.jpg')
   TvShow.create(name: "The Hit List", channel: "BBC1", genre: "Music", run_time: 30, next_air: 2021-11-27, no_seasons: 4, no_episodes: 24, formats: "Colour", image: 1).image.attach(io: File.open('app/assets/images/TheHitList.jpg'), filename: 'TheHitList.jpg')
   TvShow.create(name: "Pointless", channel: "BBC1",genre: "Game Show", run_time: 45, next_air: 2021-11-19, no_seasons: 24, no_episodes: 1326, formats: "Colour | HD | SUB | WIDE", image: 1).image.attach(io: File.open('app/assets/images/Pointless.jpg'), filename: 'Pointless.jpg')
@@ -36,7 +36,7 @@ end
 welcome = Review.where(title: 'welcome').first
 welcome.delete if welcome
 
-reviews = Review.create([title: 'Welcome', rating: '10', description: 'to the reviews section'])
+reviews = Review.create([title: 'Welcome to the reviews section!', rating: '10', description: 'Click on \'New Review\' at the bottom of the page to write your own TV show review'])
 
 # SEED User table
 #if User.count == 0
