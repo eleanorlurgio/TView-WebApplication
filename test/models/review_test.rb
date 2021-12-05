@@ -39,5 +39,4 @@ class ReviewTest < ActiveSupport::TestCase
     refute review2.valid?
   end
 
-
 end
