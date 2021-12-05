@@ -1,11 +1,12 @@
-%h1 Listing reviews
+%h1= t('.title')
+%p= t('.welcome')
 
 %table
   %thead
     %tr
-      %th Title
+      %th TV Show Name
       %th Rating
-      %th Description
+      %th Review
       %th
       %th
       %th
@@ -16,9 +17,9 @@
         %td= review.title
         %td= review.rating
         %td= review.description
-        %td= link_to 'Show', review
+        %td= link_to 'View', review
         %td= link_to 'Edit', edit_review_path(review)
-        %td= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to 'Delete', review, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 

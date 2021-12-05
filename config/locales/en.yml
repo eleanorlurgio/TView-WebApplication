@@ -42,14 +42,6 @@ en:
       title: Shows Information
       welcome: Welcome to shows.
 
-    watchlater:
-      title: Watch Later List
-      welcome: Welcome to your watch list.
-
-    favourites:
-      title: Favourites List
-      welcome: Welcome to your favourites list.
-
     contact:
       title: Contact Us
       welcome: Welcome to Points of View! Whether you’ve loved or loathed something you’ve seen on the TV, we want to hear about it. Please share with us your opinions and they may be featured on BBC's special program, Points of View.
@@ -73,4 +65,16 @@ en:
       welcome: Log in page
 
     im_a_celebrity_news:
-      title: I’m A Celebrity 2021 start time, cast, trailers and latest news
+      title: I’m A Celebrity off air again tonight as ITV confirms return date
+
+    strictly_news:
+      title: "Strictly Come Dancing 2021: Essential guide to BBC show"
+
+    dancing_on_ice:
+      title: How Dancing on Ice is filming under COVID restrictions
+
+  reviews:
+
+    index:
+      title: My Reviews
+      welcome: Welcome to the reviews section! Click on 'New Review' at the bottom of the page to write your own TV show review.
