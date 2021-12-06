@@ -8,12 +8,13 @@ class ReviewsControllerTest < ActionDispatch::IntegrationTest
 
   test "should get index" do
     get reviews_url
-    assert_response :success
+    assert_redirected_to '/users/sign_in'
   end
 
   test "should get new" do
     get new_review_url
-    assert_response :success
+    #assert_response :success
+    assert_redirected_to '/users/sign_in'
   end
 
   test "should create review" do
@@ -26,17 +27,17 @@ class ReviewsControllerTest < ActionDispatch::IntegrationTest
 
   test "should show review" do
     get review_url(@review)
-    assert_response :success
+    assert_redirected_to '/users/sign_in'
   end
 
   test "should get edit" do
     get edit_review_url(@review)
-    assert_response :success
+    assert_redirected_to '/users/sign_in'
   end
 
   test "should update review" do
     patch review_url(@review), params: { review: { description: @review.description, rating: @review.rating, title: @review.title } }
-    assert_redirected_to review_url(@review)
+    assert_redirected_to '/users/sign_in'
   end
 
   test "should destroy review" do
