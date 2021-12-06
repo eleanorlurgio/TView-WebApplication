@@ -46,6 +46,7 @@ if TvShow.count == 0
   TvShow.create(name: "5 News at 5", description: "5 News at 5, also known as Channel 5 News, is the news programme of British broadcaster Channel 5, produced by ITN from its main newsroom on Gray's Inn Road, London. 5 News was one of the new station's flagship programmes when it launched on 30 March 1997. One of the launch newsreaders was Rob Butler, who became MP for Aylesbury in 2019. It was originally produced by ITN, which at the time also provided the news for Channel 4 and ITV. It was announced on 9 March 2004 that Sky had won the new contract to provide Channel 5 with its news bulletins.", channel: "Channel 5", genre: "News", run_time: 60, next_air: 2021-11-22, no_seasons: 1, no_episodes: 228, formats: "Colour | HD | SUB", image: 1).image.attach(io: File.open('app/assets/images/5NewsAt5.jpg'), filename: '5NewsAt5.jpg')
 end
 
+# Seed a default review
 welcome = Review.where(title: 'welcome').first
 welcome.delete if welcome
 

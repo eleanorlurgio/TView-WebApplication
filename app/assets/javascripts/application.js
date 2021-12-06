@@ -17,6 +17,7 @@
 //= require turbolinks
 //= require_tree .
 
+// Autoscrolls homepage slides at a rate of 4 seconds
 var slidesTimeout;
 
 function pageLoad(){
@@ -45,12 +46,6 @@ function pageLoad(){
   }
 }
 
-
-//window.addEventListener('load', function () {
-//  console.log("It's loaded!");
-//  showSlides();
-//})
-
+// Checks document is loaded before calling JavaScript
 $( document ).on('turbolinks:load', pageLoad);
-
 $(document).ready(pageLoad);
