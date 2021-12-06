@@ -17,26 +17,40 @@
 //= require turbolinks
 //= require_tree .
 
-var slideIndex = 0;
+var slidesTimeout;
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+function pageLoad(){
+  var slideIndex = 0;
+  console.log("page load");
+  if (slidesTimeout) {
+    clearTimeout(slidesTimeout);
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  showSlides();
+  function showSlides() {
+    console.log("picture thing")
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    slidesTimeout = setTimeout(showSlides, 4000); // Change image every 2 seconds
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
-window.addEventListener('load', function () {
-  console.log("It's loaded!");
-  showSlides();
-})
+
+//window.addEventListener('load', function () {
+//  console.log("It's loaded!");
+//  showSlides();
+//})
+
+$( document ).on('turbolinks:load', pageLoad);
+
+$(document).ready(pageLoad);

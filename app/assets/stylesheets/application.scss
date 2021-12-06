@@ -164,20 +164,29 @@ ul li ul li {
 }
 
 // News article box
-.boxed {
+.newsbox {
   color: black;
   font-family: sans-serif;
-  background-color: #ded7c1;
+  background-color: #d6decc;
   padding: 50px;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
 
-// Contact page box
-.contactbox {
+// Box for any user input forms
+.formbox {
   background-color: $theme-dark;
   box-shadow: 8px 8px 8px white;
+  width: 50%;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Box for TV show descriptions
+.descriptionbox {
+  background-color: $theme-dark;
   width: 50%;
   padding: 50px;
   margin-left: auto;

@@ -6,16 +6,21 @@
     .mySlides.fade
       .numbertext 1 / 3
       %a{:href => "/im_a_celebrity_news"}
-        %img{:src => image_url("ImACeleb.jpg"), :style => "width:100%"}/
-      .text Caption Text
+        -# %img{:src => image_url("ImACeleb.jpg"), :style => "width:100%"}/
+        =image_tag("ImACeleb.jpg")
+      .text= t('.news1')
     .mySlides.fade
       .numbertext 2 / 3
       %a{:href => "/strictly_news"}
-        %img{:src => image_url("StrictlyComeDancing.jpg"), :style => "width:100%"}/
+        -# %img{:src => image_url("StrictlyComeDancing.jpg"), :style => "width:100%"}/
+        =image_tag("StrictlyComeDancing.jpg")
+      .text= t('.news2')
     .mySlides.fade
       .numbertext 3 / 3
       %a{:href => "/dancing_on_ice"}
-        %img{:src => image_url("DancingOnIce.jpg"), :style => "width:100%"}/
+        -# %img{:src => image_url("DancingOnIce.jpg"), :style => "width:100%"}/
+        =image_tag("DancingOnIce.jpg")
+      .text= t('.news3')
   %br/
   %div{:style => "text-align:center"}
     %span.dot

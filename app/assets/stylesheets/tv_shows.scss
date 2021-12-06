@@ -16,6 +16,7 @@ $theme-green: #cddc39;
 
 // Cards
 div.polaroid {
+  display: inline-block;
   width: 30%;
   background-color: white;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);

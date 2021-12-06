@@ -50,26 +50,3 @@ welcome = Review.where(title: 'welcome').first
 welcome.delete if welcome
 
 reviews = Review.create([title: 'Welcome to the reviews section!', rating: '10', description: 'Click on \'New Review\' at the bottom of the page to write your own TV show review'])
-
-# SEED User table
-#if User.count == 0
-#  user = User.create! :email => 'user@gmail.com', :password => '123456', :password_confirmation => '123456'
-#  user = User.create! :email => 'example@gmail.com', :password => '123456', :password_confirmation => '123456'
-#  user = User.create! :email => 'admin@gmail.com', :password => '123456', :password_confirmation => '123456'
-#  user = User.create! :email => 'email@gmail.com', :password => '123456', :password_confirmation => '123456'
-#  user = User.create! :email => 'me@gmail.com', :password => '123456', :password_confirmation => '123456'
-#end
-
-# SEED Watchlist table
-#if Watchlist.count == 0
-#for i in 1..30 do
-#  Watchlist.create(user_id: User.find(User.pluck(:id).sample), tvshow_id: TvShow.find(TvShow.pluck(:id).sample))
-#end
-#end
-
-# SEED Favouritelist table
-#if Favouritelist.count == 0
-#  for i in 1..30 do
-#    Favouritelist.create(user_id: User.find(User.pluck(:id).sample), tvshow_id: TvShow.find(TvShow.pluck(:id).sample))
-#  end
-#end

@@ -51,7 +51,6 @@ form input {
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -61,7 +60,7 @@ form input {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active {
   background-color: #717171;
 }
 

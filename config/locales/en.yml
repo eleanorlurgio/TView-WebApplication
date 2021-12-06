@@ -38,6 +38,10 @@ en:
       title: TView
       welcome: Welcome to TView, your hub for managing your TV viewing.
 
+      news1: "NEWS: I’m A Celebrity off air again tonight as ITV confirms return date"
+      news2: "Strictly Come Dancing 2021: Essential guide to BBC show"
+      news3: How Dancing on Ice is filming under COVID restrictions
+
     shows:
       title: Shows Information
       welcome: Welcome to shows.
