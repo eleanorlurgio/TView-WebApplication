@@ -22,15 +22,17 @@ div.polaroid {
   width: 550px;
   background-color: white;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+
+  img {
+    //width: 100%;
+    //max-height: auto;
+    object-fit: cover;
+    width: 550px;
+    height: 300px;
+  }
 }
 
-img {
-  //width: 100%;
-  //max-height: auto;
-  object-fit: cover;
-  width: 550px;
-  height: 300px;
-}
+
 
 div.container {
   text-align: center;
@@ -65,9 +67,20 @@ div.box {
 */
 
 div.box {
+  display: inline-block;
   background-color: $theme-medium;
   border: 15px solid $theme-green;
   width: 300px;
   padding: 50px;
   margin: 20px;
+}
+
+// Box for TV show descriptions
+.descriptionbox {
+  display: inline-block;
+  background-color: $theme-dark;
+  width: 50%;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }

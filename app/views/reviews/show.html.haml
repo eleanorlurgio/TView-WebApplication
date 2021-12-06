@@ -1,15 +1,16 @@
-%p#notice= notice
+.descriptionbox
+  %p#notice= notice
 
-%p
-  %b Title:
-  = @review.title
-%p
-  %b Rating:
-  = @review.rating
-%p
-  %b Description:
-  = @review.description
+  %p
+    %b Title:
+    = @review.title
+  %p
+    %b Rating:
+    = @review.rating
+  %p
+    %b Description:
+    = @review.description
 
-= link_to 'Edit', edit_review_path(@review)
-\|
-= link_to 'Back', reviews_path
+  = link_to 'Edit', edit_review_path(@review)
+  \|
+  = link_to 'Back', reviews_path

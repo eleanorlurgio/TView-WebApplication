@@ -1,5 +1,7 @@
 %h1= t('.title')
+%hr
 %p= t('.welcome')
+%br
 
 %table
   %thead
@@ -15,7 +17,7 @@
     - @reviews.each do |review|
       %tr
         %td= review.title
-        %td= review.rating
+        %td= review.rating.to_s + '/10'
         %td= review.description
         %td= link_to 'View', review
         %td= link_to 'Edit', edit_review_path(review)

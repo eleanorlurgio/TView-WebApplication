@@ -77,8 +77,11 @@ en:
     dancing_on_ice:
       title: How Dancing on Ice is filming under COVID restrictions
 
-  reviews:
+  tv_shows:
+    index:
+        title: Browse TV Shows
 
+  reviews:
     index:
       title: My Reviews
       welcome: Welcome to the reviews section! Click on 'New Review' at the bottom of the page to write your own TV show review.
