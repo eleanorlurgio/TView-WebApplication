@@ -28,3 +28,4 @@ Rails version: 5.2.6
 
 Prerequisites:
  - Run rails db:seed to populate database first
+ - GitHub repository for project: https://github.com/eleanorlurgio/TView-WebApplication.git
