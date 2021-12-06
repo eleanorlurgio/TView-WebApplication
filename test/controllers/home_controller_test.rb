@@ -21,26 +21,6 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     assert_select 'p', 'Welcome to shows.'
   end
 
-  # Watch later page tests
-  test "should get watchlater" do
-    get watchlater_url
-    assert_response :success
-
-    assert_select 'title', 'TView'
-    assert_select 'h1', 'Watch Later List'
-    assert_select 'p', 'Welcome to your watch list.'
-  end
-
-  # Favourites page tests
-  test "should get favourites" do
-    get favourites_url
-    assert_response :success
-
-    assert_select 'title', 'TView'
-    assert_select 'h1', 'Favourites List'
-    assert_select 'p', 'Welcome to your favourites list.'
-  end
-
   # Contact page tests
   test "should get contact" do
     get contact_url
