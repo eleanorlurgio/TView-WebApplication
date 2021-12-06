@@ -17,28 +17,33 @@ $theme-green: #cddc39;
 // Cards
 div.polaroid {
   display: inline-block;
-  width: 30%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 550px;
   background-color: white;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
 }
 
 img {
-  width: 100%;
-  max-height: auto;
+  //width: 100%;
+  //max-height: auto;
+  object-fit: cover;
+  width: 550px;
+  height: 300px;
 }
 
 div.container {
   text-align: center;
   color: black;
-  max-width: 30%;
+  //max-width: 30%;
+  width: 550px;
   padding: 10px 20px;
 }
 
-// Links
 
-a {
-  color: black;
-  text-decoration: none;
+// News caption text
+.text {
+  background-color: black;
 }
 
 // Info box

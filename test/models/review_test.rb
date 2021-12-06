@@ -18,6 +18,7 @@ class ReviewTest < ActiveSupport::TestCase
     review = Review.new
 
     review.title = 'My review'
+    review.rating = 10
     review.description = 'My review is unique'
 
     review.save

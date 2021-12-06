@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.hometext {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 form label {
   color: white;
   display: block;
